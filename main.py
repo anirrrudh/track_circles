@@ -33,13 +33,13 @@ prev8 = None
 prev9, prev10 = None, None
 
 # Initialize video capture
-cap = cv2.VideoCapture('Dot_Track_Vid_2023.mp4')
+cap = cv2.VideoCapture('Track_Circles.mp4')
 
 # Initialize video writer
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 frame_size = (int(cap.get(3)), int(cap.get(4)))
 fourcc = cv2.VideoWriter_fourcc(*'avc1')
-output_file = 'Output_Dot_Track.mp4'
+output_file = 'Track_Circles_Output.mp4'
 out = cv2.VideoWriter(output_file, fourcc, fps, frame_size)
 
 frame_no = 0
